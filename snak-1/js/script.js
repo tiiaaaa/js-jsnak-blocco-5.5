@@ -70,8 +70,6 @@ const zucchine = [
     },
 ];
 
-let totalWeight = 0
-
 //!Filter se ritorna vero crea un array con quegli elementi, altrimenti li scarta
 const arrayLunghe = zucchine.filter((Element) => Element.lunghezza > 15);
 console.log(arrayLunghe);
@@ -80,6 +78,8 @@ const arrayCorte = zucchine.filter((Element) => Element.lunghezza < 15);
 console.log(arrayCorte);
 
 //!Utilizzati vari foreach per trovare il peso tot dei vari insiemi
+let totalWeight = 0
+
 zucchine.forEach((Element) => {
     totalWeight += Element.peso;
 });
